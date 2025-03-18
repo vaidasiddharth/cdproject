@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app1:
+    build: .
+    ports:
+      - "3001:3000"
+    container_name: node_app_1
+    restart: always
+  
+  app2:
+    build: .
+    ports:
+      - "3002:3000"
+    container_name: node_app_2
+    restart: always
